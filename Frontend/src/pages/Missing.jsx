@@ -14,7 +14,7 @@ function Missing() {
                 const response = await axios.get(`${Backendurl}/api/v1/users/get_lost`, {
                     withCredentials: true, 
                 });
-                console.log(response.data.data);
+                // console.log(response.data.data);
                 Setmembers(response.data.data); // Assuming data is inside `data` key
             } catch (error) {
                 console.error("Error fetching lost members:", error);

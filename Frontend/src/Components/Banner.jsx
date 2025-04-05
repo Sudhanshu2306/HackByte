@@ -3,7 +3,7 @@ import Globe from "./Globe.jsx";
 
 const Banner = () => {
   return (
-    <div className="bg-white py-12 px-4 sm:px-6 lg:px-50 flex justify-center justify-between">
+    <div className="bg-white py-12 px-4 sm:px-6 lg:px-50 flex justify-center">
       <div className="max-w-6xl w-full flex flex-col lg:flex-row items-center lg:items-center justify-between gap-12">
 
         {/* Text Section */}

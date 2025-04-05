@@ -8,14 +8,13 @@ export default function ServicePage() {
           <span className="inline-block bg-[#B4FF4A] px-3 py-1 rounded-lg font-semibold">Unique Features</span>
         </h1>
         <p className="text-lg max-w-3xl">
-          At our digital marketing agency, we offer a range of services to
-          help businesses grow and succeed online. These services include:
+          Our platform doesn’t just find missing individuals — it also helps reconnect family members. Using facial recognition combined with relationship mapping
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <ServiceCard 
-          title="Search engine optimization"
+        <ServiceCard
+          title="Face Recognition"
           background="bg-[#F2F2F2]"
           icon={
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 400 400" fill="none">
@@ -34,8 +33,8 @@ export default function ServicePage() {
             </svg>
           }
         />
-        <ServiceCard 
-          title="Pay-per-click advertising"
+        <ServiceCard
+          title="Matches Image/Video with DB"
           background="bg-[#B4FF4A]"
           icon={
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 400 400" fill="none">
@@ -49,47 +48,20 @@ export default function ServicePage() {
             </svg>
           }
         />
-        <ServiceCard 
-          title="Social Media Marketing"
+        <ServiceCard
+          title="Location Tracking"
           background="bg-[#1A1A1A]"
           darkMode={true}
           icon={
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 400 400" fill="none">
-              <rect x="130" y="120" width="80" height="100" rx="5" fill="#fff" stroke="#fff" strokeWidth="4" />
-              <rect x="220" y="90" width="80" height="100" rx="5" fill="#fff" stroke="#fff" strokeWidth="4" />
-              <rect x="80" y="180" width="80" height="100" rx="5" fill="#fff" stroke="#fff" strokeWidth="4" />
-              <path d="M150 170 L150 150 L190 150 L190 170" stroke="#fff" strokeWidth="4" fill="none" />
-              <circle cx="170" cy="150" r="15" fill="#fff" />
-              <path d="M240 140 L240 120 L280 120 L280 140" stroke="#fff" strokeWidth="4" fill="none" />
-              <circle cx="260" cy="120" r="15" fill="#fff" />
-              <path d="M100 230 L100 210 L140 210 L140 230" stroke="#fff" strokeWidth="4" fill="none" />
-              <circle cx="120" cy="210" r="15" fill="#fff" />
-              <path d="M160 180 L180 160" stroke="#fff" strokeWidth="4" strokeLinecap="round" />
-              <path d="M230 150 L250 130" stroke="#fff" strokeWidth="4" strokeLinecap="round" />
-              <path d="M130 220 L110 200" stroke="#fff" strokeWidth="4" strokeLinecap="round" />
-              <path d="M360 200 L340 200 L340 160 L360 160" stroke="#fff" strokeWidth="3" fill="none" />
-              <path d="M350 180 L365 180" stroke="#fff" strokeWidth="3" strokeLinecap="round" />
-              <path d="M350 170 L365 170" stroke="#fff" strokeWidth="3" strokeLinecap="round" />
-              <path d="M350 190 L365 190" stroke="#fff" strokeWidth="3" strokeLinecap="round" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"
+                fill="#fff"
+              />
             </svg>
           }
         />
-        <ServiceCard 
-          title="Email Marketing"
-          background="bg-[#F2F2F2]"
-          icon={
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 400 400" fill="none">
-              <path d="M100 150 L230 230 L360 150" stroke="#333" strokeWidth="6" fill="none" />
-              <rect x="100" y="150" width="260" height="160" rx="10" stroke="#333" strokeWidth="6" fill="none" />
-              <circle cx="300" cy="120" r="40" stroke="#333" strokeWidth="6" fill="none" />
-              <circle cx="150" cy="320" r="40" stroke="#333" strokeWidth="6" fill="none" />
-              <path d="M280 100 L320 140" stroke="#333" strokeWidth="6" strokeLinecap="round" />
-              <path d="M130 300 L170 340" stroke="#333" strokeWidth="6" strokeLinecap="round" />
-              <path d="M150 280 L100 350" stroke="#333" strokeWidth="4" strokeLinecap="round" />
-              <path d="M300 160 L350 80" stroke="#333" strokeWidth="4" strokeLinecap="round" />
-            </svg>
-          }
-        />
+
       </div>
     </div>
   );

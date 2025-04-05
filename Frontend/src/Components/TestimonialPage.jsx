@@ -5,31 +5,31 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    text: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+    text: "Thanks to Tracify, we found our missing brother within days. The video search feature caught him walking past a local store’s camera — something no other service could do. We’re forever grateful!",
     author: "John Smith",
     position: "Marketing Director at XYZ Corp"
   },
   {
     id: 2,
-    text: "Since partnering with Positivus, our social media engagement has increased by 200%. Their strategic approach and creative content have transformed our brand's online visibility. The team is always available and delivers results beyond expectations.",
+    text: "Tracify isn't just a platform — it’s a miracle. We uploaded a blurry CCTV clip, and within hours, we got a match. No words can describe the joy of reuniting with my mother after months of searching",
     author: "Sarah Johnson",
     position: "CEO at Bright Solutions Inc."
   },
   {
     id: 3,
-    text: "Positivus revamped our email marketing strategy, resulting in a 45% increase in open rates and 60% more conversions. Their data-driven approach and attention to detail have made a significant impact on our bottom line. I wouldn't hesitate to recommend them.",
+    text: "Other missing person platforms only looked at photos. Tracify’s video analysis tech helped us spot our cousin in a news channel’s street footage. Truly next-generation innovation!",
     author: "Michael Brown",
     position: "Sales Director at Tech Innovations"
   },
   {
     id: 4,
-    text: "Our PPC campaigns were underperforming until we brought in Positivus. Within just 3 months, they optimized our ads and reduced our cost per acquisition by 38% while increasing qualified leads. Their expertise in digital advertising is unmatched.",
+    text: "The family tracing feature is life-changing. Even though we couldn’t find my nephew immediately, Tracify connected us with distant relatives who were also searching. We rebuilt our family, thanks to this beautiful platform",
     author: "Emily Chen",
     position: "Digital Strategist at GrowFast Agency"
   },
   {
     id: 5,
-    text: "The SEO work done by Positivus has helped us reach the first page of Google for our most important keywords. Their holistic approach to optimization and content creation has delivered sustainable growth month after month.",
+    text: "Tracify gave us hope when we had none. The AI face match through videos was beyond anything we imagined. If you’re looking for a loved one, Tracify is the best place to start",
     author: "Robert Taylor",
     position: "Founder of Premium Boutique"
   }

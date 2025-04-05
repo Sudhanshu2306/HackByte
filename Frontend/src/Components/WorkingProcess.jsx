@@ -17,32 +17,33 @@ const WorkingProcess = () => {
     {
       id: "section-1",
       number: "01",
-      title: "Consultation",
+      title: "Upload Photo or Video",
       content:
-        "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+        "Users can upload a photo or video of the missing person or suspected individual. Our system scans the uploaded media against the database to identify potential matches.",
     },
     {
       id: "section-2",
       number: "02",
-      title: "Research and Strategy Development",
+      title: "Search and Match",
       content:
-        "Based on our initial consultation, we'll conduct thorough market research and develop a comprehensive strategy tailored to your specific goals. This includes competitor analysis, identifying market opportunities, and creating an actionable roadmap.",
+        "Our advanced AI-powered system analyzes the uploaded media and searches through the database to find the closest matches, helping to quickly locate missing individuals.",
     },
     {
       id: "section-3",
       number: "03",
-      title: "Implementation",
+      title: "Retrieve Contact Information",
       content:
-        "After finalizing the strategy, we move into the implementation phase where we put our plans into action. This includes executing marketing campaigns, developing necessary assets, and closely monitoring progress to ensure optimal results.",
+        "Once a match is found, the system retrieves the registered contact details of the missing person or their family members to facilitate immediate communication and reunion.",
     },
     {
       id: "section-4",
       number: "04",
-      title: "Monitoring and Optimization",
+      title: "Real-time Location Tracking",
       content:
-        "We continuously monitor the performance of your campaigns and initiatives, making data-driven adjustments to optimize results. Regular reporting and analysis ensure you're always informed about progress toward your business goals.",
+        "Families can set a safe radius for their loved ones. If the individual moves outside the designated area, the system sends instant alerts and displays their location on an interactive map.",
     },
   ];
+  
 
   return (
     <div className="bg-white p-4 md:p-8 max-w-4xl mx-auto">

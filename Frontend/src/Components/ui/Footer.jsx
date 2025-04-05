@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className="bg-black text-white p-8 w-[90%] rounded-t-4xl">
             {/* Top Section */}
             <div className="flex flex-col md:flex-row justify-between items-center  pb-6 text-center md:text-left">
-                <div className="text-2xl font-bold">Positivus</div>
+                <div className="text-2xl font-bold">Tracify</div>
                 <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm mt-4 md:mt-0">
                 <a href="#" className="hover:underline">About us</a>
                 <a href="#" className="hover:underline">Services</a>
@@ -26,9 +26,9 @@ export default function Footer() {
                 {/* Contact Section */}
                 <div className="w-full md:w-1/2 mb-6 md:mb-0">
                 <p className="bg-[#B4FF4A] text-black font-bold px-3 py-1 inline-block rounded-md">Contact us:</p>
-                <p className="mt-2">Email: info@positivus.com</p>
-                <p>Phone: 555-567-8901</p>
-                <p>Address: 1234 Main St, Moonstone City, Stardust State 12345</p>
+                <p className="mt-2">Email: info@Tracify.com</p>
+                <p>Phone: 43942341341</p>
+                <p>Address: NIT RAIPUR , C.G.</p>
                 </div>
 
                 {/* Subscription Section */}
@@ -44,7 +44,7 @@ export default function Footer() {
 
             {/* Bottom Section */}
             <div className="border-t border-gray-700 pt-4 text-center text-sm">
-                <p>&copy; 2023 Positivus. All Rights Reserved. <a href="#" className="hover:underline">Privacy Policy</a></p>
+                <p>&copy; 2025 Tracify. All Rights Reserved. <a href="#" className="hover:underline">Privacy Policy</a></p>
             </div>
         </footer>
     </div>

@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ImageUploader from "./ImageUploader";
 import axios from "axios";
+import Pop from "./Pop";
 
-export default function FileUpload({ userId }) {
+export default function FileUpload() {
   const [file, setFile] = useState(null);
   const [formEnabled, setFormEnabled] = useState(false);
   const navigate = useNavigate();
@@ -35,7 +36,8 @@ export default function FileUpload({ userId }) {
       //   })
       // }
       if (response.data.match === true) {
-        navigate("/resolved", { state: { matchId: response.data.match_id } });
+        // navigate("/resolved", { state: { matchId: response.data.match_id } });
+        return <Pop id={response.data.match_id} />
       } else {
         alert("❌ No Match Found. Please fill out the form.");
         console.log("embedding are",response.data.embedding);

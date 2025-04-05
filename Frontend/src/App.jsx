@@ -46,7 +46,7 @@ const App = () => {
         <Route path="/resolved" element={<ResolvedPage />} />
         {/* Protected Routes - Only accessible if user is logged in */}
         <Route path="/missing" element={<PrivateRoute element={<Missing />} />} />
-        <Route path="/myfam" element={<PrivateRoute element={<MyFam />} />} />
+        <Route path="/family" element={<PrivateRoute element={<MyFam />} />} />
       </Routes>
     </Router>
   );

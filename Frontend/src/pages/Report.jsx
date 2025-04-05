@@ -8,7 +8,7 @@ function Report() {
   return (
     <div>
         <Navbar />
-        <FileUpload userId={testUserId} />
+        <FileUpload />
         <Footer />
     </div>
   )

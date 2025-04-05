@@ -8,7 +8,9 @@ import Footer from '../Components/ui/Footer'
 import ProgressLine from '../Components/Progress/ProgressLine'
 import Bot from '../Components/Bot'
 import Banner from "../Components/Banner.jsx";
+import Pop from '../Components/Pop.jsx'
 
+const testUserId="67f0c5f4e48075329125c1e2";
 function Home() {
   return (
     <div>
@@ -21,6 +23,7 @@ function Home() {
         <TestimonialPage />
         <Footer />
         <Bot />
+        <Pop id={testUserId} />
     </div>
   )
 }

@@ -36,9 +36,9 @@ function LostCard({ members }) {
 
         {/* Buttons */}
         <div className="flex justify-center mt-1">
-          <button className="bg-[#B4FF4A] hover:bg-[#AFFF30] text-black px-2 py-1 rounded-md">
+          <a href='/report' className="bg-[#B4FF4A] hover:bg-[#AFFF30] text-black px-2 py-1 rounded-md">
             Find Me
-          </button>
+          </a>
         </div>
       </div>
 
