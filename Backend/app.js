@@ -30,7 +30,7 @@ app.use(cors({
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD'],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization'],
-    optionsSuccessStatus: 204
+    optionsSuccessStatus: 204 // Ensures proper handling of preflight requests
 }));
 
 app.use(cookieParser());
@@ -39,7 +39,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // // Routes
-import userroutes from './routes/user.routes.js'
+import userroutes from "./routes/user.routes.js"
 app.use("/api/v1/users", userroutes);
+
 
 export { app, port };
