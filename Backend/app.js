@@ -39,7 +39,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // // Routes
-import userroutes from "./routes/user.routes.js"
+import userroutes from './routes/user.routes.js'
 app.use("/api/v1/users", userroutes);
 
 export { app, port };
