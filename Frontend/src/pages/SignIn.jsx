@@ -4,8 +4,6 @@ import axios from "axios";
 import { useAuth } from "../context/AuthContext";
 import { Backendurl } from "../../Private/backend";
 
-// const Backendurl = import.meta.env.BACKEND_URL;
-
 function SignIn() {
   const { storeTokenInLS , isLoggedIn} = useAuth();
 

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import LostCard from '../Components/LostCard';
 import axios from 'axios';
 import { Backendurl } from '../../Private/backend';
-// const Backendurl = import.meta.env.BACKEND_URL;
 function Missing() {
     const [members, Setmembers] = useState([]);
 

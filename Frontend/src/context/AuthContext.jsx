@@ -52,8 +52,8 @@ export const AuthProvider = ({ children }) => {
 
             if (response.status === 200) {
                 const userData = response.data.data;
-                setUser(userData);  
-                toast.success("User Fetched Successfully!");
+                setUser(userData);
+                // toast.success("User Fetched Successfully!");
 
                 // If the user is a family member or family head, fetch family members
                 if (userData.role === "family member" || userData.role === "family head") {
