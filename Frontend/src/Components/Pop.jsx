@@ -8,12 +8,12 @@ function Pop({id}) {
     useEffect(() => {
         const fetchMatched = async () => {
             try {
-                console.log("Fetching match details...");
+                // console.log("Fetching match details...");
                 // Fetch lost members from the backend
                 const response = await axios.get(`${Backendurl}/api/v1/users/matched/${id}`, {
                     withCredentials: true, 
                 });
-                console.log(response.data);
+                // console.log(response.data);
                 setMatchIdData(response.data);
             } catch (error) {
                 console.error("Error fetching lost members:", error);

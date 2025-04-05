@@ -218,14 +218,14 @@ const uploadFile = asyncHandler(async (req, res) => {
         }
         
         const {userId} = req.body;
-        console.log("userId",userId);
+        // console.log("userId",userId);
         const imagePath = req.files.image[0].path;
-        console.log("Image path is ",imagePath);
+        // console.log("Image path is ",imagePath);
 
 
         const formData = new FormData();
         formData.append("image", fs.createReadStream(imagePath));
-        console.log(formData);
+        // console.log(formData);
         const response = await axios.post("http://127.0.0.1:5001/process", formData,{
             headers: formData.getHeaders(),
         });
@@ -234,7 +234,7 @@ const uploadFile = asyncHandler(async (req, res) => {
             return res.status(200).json({ match: true, match_id: response.data.match_id });
         } else {
             // console.log("❌ No match found");
-            console.log("embedding",response.data.embedding);
+            // console.log("embedding",response.data.embedding);
             return res.status(200).json({embedding : response.data.embedding, match: false });
         }
 
@@ -313,7 +313,7 @@ const submitForm = asyncHandler(async (req, res) => {
   const fetchLost = asyncHandler(async (req, res) => {
     try {
       const lostPeople = await Lost.find(); // Fetch all records
-      console.log(lostPeople);
+    //   console.log(lostPeople);
       return res.status(200).json({
         success: true,
         count: lostPeople.length,

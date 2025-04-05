@@ -19,7 +19,7 @@ export default function FileUpload() {
     const formData = new FormData();
     formData.append("image", file);
     formData.append("userId", userId);
-    console.log("File Uploading FormData:");
+    // console.log("File Uploading FormData:");
     formData.forEach((value, key) => console.log(key, value));
     try {
       const response = await axios.post(
@@ -40,7 +40,7 @@ export default function FileUpload() {
         return <Pop id={response.data.match_id} />
       } else {
         alert("❌ No Match Found. Please fill out the form.");
-        console.log("embedding are",response.data.embedding);
+        // console.log("embedding are",response.data.embedding);
         setFormEnabled(true);
         setembedding(response.data.embedding);
       }
@@ -80,7 +80,7 @@ export default function FileUpload() {
       return;
     }
     formData.embedding = embedding;
-    console.log("formData wefiwsefs" , formData);
+    // console.log("formData wefiwsefs" , formData);
     const formDataToSend = new FormData();
     Object.entries(formData).forEach(([key, value]) => {
       if(key === "embedding"){

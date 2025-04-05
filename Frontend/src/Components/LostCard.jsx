@@ -7,54 +7,56 @@ function LostCard({ members }) {
     setShowFullDescription(!showFullDescription);
   };
 
-  const shortDescription = members.description.split(' ').slice(0, 2).join(' ');
+  const shortDescription =
+    members.description.split(' ').slice(0, 12).join(' ') + '...';
 
   return (
-    <div className="relative flex w-[20rem] h-[10rem] items-center justify-around bg-gray- shadow-lg rounded-2xl p-2">
-      {/* Profile Image */}
-      <div className="w-[10rem] h-[10rem] rounded-xl bg-gray flex justify-center items-center bg-gray-100 ">
-        <img src={members.image_url} alt={members.name} className="w-[8rem] h-[8rem] object-cover rounded-2xl" />
-      </div>
+    <div className="relative w-[22rem] min-h-[16rem] bg-white shadow-md rounded-xl overflow-hidden border border-gray-200 transition-all hover:shadow-xl">
+      <div className="flex p-4 gap-4">
+        {/* Image */}
+        <div className="flex-shrink-0">
+          <img
+            src={members.image_url}
+            alt={`${members.firstName} ${members.lastName}`}
+            className="w-[7rem] h-[7rem] rounded-lg object-cover border border-gray-300"
+          />
+        </div>
 
-      {/* User Info */}
-      <div className="ml-3  flex flex-col  gap-2 ">
-        <h2 className="text-md font-semibold text-center">{members.name}</h2>
-        <p className="text-gray-500 text-sm text-center">Age: {members.age}</p>
+        {/* Info */}
+        <div className="flex flex-col justify-between flex-grow">
+          <div className="space-y-1">
+            <h2 className="text-lg font-semibold text-gray-800">
+              {members.firstName} {members.lastName}
+            </h2>
+            <p className="text-xs text-gray-700">
+              {showFullDescription ? members.description : shortDescription}
+              {members.description.split(' ').length > 12 && (
+                <button
+                  onClick={toggleDescription}
+                  className="text-blue-500 hover:underline ml-1 text-xs"
+                >
+                  {showFullDescription ? 'Show less' : 'Read more'}
+                </button>
+              )}
+            </p>
+            <p className="text-xs text-gray-600"><strong>Phone:</strong> {members.phoneNumber}</p>
+            <p className="text-xs text-gray-600"><strong>Zip:</strong> {members.zipCode}</p>
+            <p className={`text-xs font-semibold ${members.resolved ? 'text-green-600' : 'text-red-600'}`}>
+              Status: {members.resolved ? 'Resolved' : 'Unresolved'}
+            </p>
+          </div>
 
-        {/* Description Section */}
-        <div className=" text-center text-black  p-2 rounded-lg  bg-gray-100 text-xs">
-         {shortDescription}
-          {members.description.split(' ').length > 2 && (
-            <button
-              onClick={toggleDescription}
-              className="text-blue-500 ml-1"
+          {/* CTA Button */}
+          <div className="mt-3">
+            <a
+              href="/report"
+              className="block text-center bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg text-sm font-medium transition-all"
             >
-              More...
-            </button>
-          )}
-        </div>
-
-        {/* Buttons */}
-        <div className="flex justify-center mt-1">
-          <a href='/report' className="bg-[#B4FF4A] hover:bg-[#AFFF30] text-black px-2 py-1 rounded-md">
-            Find Me
-          </a>
+              Report / Found
+            </a>
+          </div>
         </div>
       </div>
-
-      {/* Popup Description */}
-      {showFullDescription && (
-        <div className="absolute top-0 left-0 w-full h-full bg-white shadow-lg rounded-2xl p-2 z-10">
-          <h2 className="text-md font-semibold text-center mb-2">{members.name}</h2>
-          <p className="text-gray-700">{members.description}</p>
-          <button
-            onClick={toggleDescription}
-            className="mt-2 bg-gray-200 px-3 py-2 rounded-md"
-          >
-            Close
-          </button>
-        </div>
-      )}
     </div>
   );
 }

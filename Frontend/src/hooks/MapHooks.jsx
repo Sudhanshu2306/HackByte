@@ -231,8 +231,8 @@ const useGeofenceAlert = (map, usersData, userFamily, center, radiusKm) => {
       if (!isInside) {
         const member = userFamily.find((m) => m._id === userData.userId);
         if (member) {
-          console.log("Sending notification for familyId:", member.familyId);
-          console.log("Message:", `${member.name} is outside the safe zone.`);
+          // console.log("Sending notification for familyId:", member.familyId);
+          // console.log("Message:", `${member.name} is outside the safe zone.`);
 
           try {
             const notificationPayload = {
@@ -254,7 +254,7 @@ const useGeofenceAlert = (map, usersData, userFamily, center, radiusKm) => {
               },
             });
 
-            console.log("Firebase notification response:", response.data);
+            // console.log("Firebase notification response:", response.data);
           } catch (err) {
             console.error("Firebase notification failed:", err);
           }

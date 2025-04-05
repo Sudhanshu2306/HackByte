@@ -9,7 +9,7 @@ function Missing() {
     useEffect(() => {
         const fetchLostMembers = async () => {
             try {
-                console.log("Fetching lost members...");
+                // console.log("Fetching lost members...");
                 // Fetch lost members from the backend
                 const response = await axios.get(`${Backendurl}/api/v1/users/get_lost`, {
                     withCredentials: true, 
@@ -25,7 +25,7 @@ function Missing() {
     }, []);
 
     return (
-        <div className='flex'>
+        <div className='flex gap-2 flex-shrink'>
             {members.map((member, index) => (
                 <LostCard key={index} members={member} />
             ))}

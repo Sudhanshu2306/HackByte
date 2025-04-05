@@ -22,12 +22,12 @@ const io = new Server(server, {
 let families = {};
 
 io.on("connection", (socket) => {
-    console.log(`New client connected: ${socket.id}`);
+    // console.log(`New client connected: ${socket.id}`);
 
     // User joins a family room
     socket.on("joinFamily", async ({ userId, familyId }) => {
         socket.join(familyId);
-        console.log(`${userId} joined family ${familyId}`);
+        // console.log(`${userId} joined family ${familyId}`);
 
         if (!families[familyId]) {
             families[familyId] = {};
@@ -56,7 +56,7 @@ io.on("connection", (socket) => {
             families[familyId][userId].latitude = latitude;
             families[familyId][userId].longitude = longitude;
 
-            console.log(`Location updated for ${userId} in Family ${familyId}: (${latitude}, ${longitude})`);
+            // console.log(`Location updated for ${userId} in Family ${familyId}: (${latitude}, ${longitude})`);
 
             // Send **only to the user who requested it**
             socket.emit("usersData", formatFamilyData(familyId));
@@ -65,12 +65,12 @@ io.on("connection", (socket) => {
 
     // Handle user disconnection
     socket.on("disconnect", async () => {
-        console.log(`Client disconnected: ${socket.id}`);
+        // console.log(`Client disconnected: ${socket.id}`);
 
         Object.keys(families).forEach(async (familyId) => {
             Object.keys(families[familyId]).forEach(async (userId) => {
                 if (families[familyId][userId].socketId === socket.id) {
-                    console.log(`Saving last location for ${userId} in Family ${familyId}`);
+                    // console.log(`Saving last location for ${userId} in Family ${familyId}`);
 
                     // Store last known location in MongoDB
                     const { latitude, longitude } = families[familyId][userId];

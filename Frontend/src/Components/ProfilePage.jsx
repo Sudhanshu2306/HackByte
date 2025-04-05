@@ -23,7 +23,7 @@ const ProfilePage = () => {
   // Handle Photo Change
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
-    console.log(selectedFile);
+    // console.log(selectedFile);
     if (selectedFile) {
       setFile(selectedFile);
       const imageUrl = URL.createObjectURL(selectedFile);

@@ -9,7 +9,7 @@ const useSocket = (setUsersData, userId, familyId) => {
     const socket = io(`${Backendurl}`);
 
     socket.on("connect", () => {
-      console.log("Connected to WebSocket server");
+      // console.log("Connected to WebSocket server");
       socket.emit("joinFamily", { userId, familyId });
     });
 
@@ -19,7 +19,7 @@ const useSocket = (setUsersData, userId, familyId) => {
       setUsersData(updatedUsersData);updatedUsersData
     }); 
 
-    // Send location updates every 5 seconds
+    // Send location updates every 5 secondsx
     const sendLocationUpdate = () => {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(

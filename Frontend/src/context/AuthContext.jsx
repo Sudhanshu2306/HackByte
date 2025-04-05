@@ -31,9 +31,9 @@ export const AuthProvider = ({ children }) => {
                 headers: { Authorization: `Bearer ${token}` },
                 withCredentials: true,
             });
-            console.log(response);
+            // console.log(response);
             if (response.status === 200) {
-                console.log("Fetched family members:", response.data.data.familyMembers);
+                // console.log("Fetched family members:", response.data.data.familyMembers);
                 setUserFamily(response.data.data.familyMembers);
             }
         } catch (error) {

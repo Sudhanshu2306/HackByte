@@ -33,7 +33,7 @@ export default function Navbar() {
       await axios.get(`${import.meta.env.BACKEND_URL}/api/v1/users/logout`, {
         withCredentials: true,
       });
-      console.log("User logged out successfully");
+      // console.log("User logged out successfully");
     } catch (error) {
       console.error("Error during logout:", error.response ? error.response.data : error.message);
     }

@@ -31,7 +31,7 @@ const sendGeofenceAlert = async (req, res) => {
     };
 
     const response = await admin.messaging().sendMulticast({ tokens, ...payload });
-    console.log("FCM Response:", response);
+    // console.log("FCM Response:", response);
 
     return res.status(200).json({ message: "Notification sent successfully.", response });
   } catch (error) {
