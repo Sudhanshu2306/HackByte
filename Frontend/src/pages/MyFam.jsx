@@ -36,7 +36,7 @@ function MyFam() {
   useSocket(setUsersData, user._id, user.familyId);
   useGenerateUserMarker(map, "#693ff2", usersData, userFamily);
   useMapCircle(map, selectedLocation, 1);
-  useGeofenceAlert(map, usersData, userFamily, selectedLocation, 1);
+  // useGeofenceAlert(map, usersData, userFamily, selectedLocation, 1);
 
   // 🔹 Handle location autocomplete
   const handleAutocomplete = useCallback(
