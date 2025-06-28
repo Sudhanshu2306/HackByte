@@ -1,1 +1,1 @@
-export const Backendurl = import.meta.env.VITE_BACKEND_URL;
+export const Backendurl = import.meta.env.VITE_BACKEND_URL
