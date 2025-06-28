@@ -27,7 +27,7 @@ export default function Footer() {
                 <div className="w-full md:w-1/2 mb-6 md:mb-0">
                 <p className="bg-[#B4FF4A] text-black font-bold px-3 py-1 inline-block rounded-md">Contact us:</p>
                 <p className="mt-2">Email: info@Tracify.com</p>
-                <p>Phone: 43942341341</p>
+                <p>Phone: +91 810xxxx352</p>
                 <p>Address: NIT RAIPUR , C.G.</p>
                 </div>
 

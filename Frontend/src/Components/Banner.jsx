@@ -1,5 +1,6 @@
 import React from "react";
 import Globe from "./Globe.jsx";
+import Image from "../assets/images/image.png"
 
 const Banner = () => {
   return (
@@ -24,7 +25,7 @@ const Banner = () => {
 
         {/* Globe Section */}
         <div className="flex-1 flex justify-center max-w-[600px] max-h-[350px]">
-          <Globe />
+          <img src={Image} alt="hi" />
         </div>
 
       </div>

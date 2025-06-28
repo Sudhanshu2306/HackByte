@@ -1,19 +1,11 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import uj from "../assets/images/uj.jpg";
-import sh from "../assets/images/sh.jpg";
+import uj from "../assets/images/uj.png";
 import su from "../assets/images/su.jpg";
-import st from "../assets/images/st.jpg";
+import st from "../assets/images/st.png";
 
 const teamMembers = [
-    {
-        name: "Shubham Patel",
-        role: "Lead Developer",
-        image: sh,
-        linkedin: "https://www.linkedin.com/in/shub17/",
-        github: "https://github.com/Sp-177"
-    },
     {
         name: "Ujjwal Agrawal",
         role: "UI/UX Designer",

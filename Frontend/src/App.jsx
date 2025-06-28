@@ -29,7 +29,7 @@ const App = () => {
   }, []);
 
   if (loading || isPageLoading) {
-    return <LoadingScreen />; // ✅ Show loading screen before any page
+    return <LoadingScreen />;
   }
 
   return (
