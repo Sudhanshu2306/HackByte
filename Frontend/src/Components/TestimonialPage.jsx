@@ -7,7 +7,7 @@ const testimonials = [
     id: 1,
     text: "Thanks to Tracify, we found our missing brother within days. The video search feature caught him walking past a local store’s camera — something no other service could do. We’re forever grateful!",
     author: "John Smith",
-    position: "Marketing Director at XYZ Corp"
+    position: "Marketing Director Sunshine Corp"
   },
   {
     id: 2,

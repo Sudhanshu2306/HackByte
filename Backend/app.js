@@ -14,8 +14,7 @@ app.use(express.urlencoded({ limit: "10mb", extended: true }));
 // const allowedOrigins = ['*']
 
 const allowedOrigins = [
-    'http://localhost:5173',
-    'http://localhost:5174'
+    process.env.FRONTEND_URL,
 ];
 
 app.use(cors({

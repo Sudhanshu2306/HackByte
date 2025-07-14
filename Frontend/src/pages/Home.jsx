@@ -23,7 +23,6 @@ function Home() {
         <TestimonialPage />
         <Footer />
         <Bot />
-        <Pop id={testUserId} />
     </div>
   )
 }

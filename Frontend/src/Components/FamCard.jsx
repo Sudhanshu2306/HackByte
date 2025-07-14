@@ -18,9 +18,10 @@ export default function FamCard({member}) {
           <h2 className="text-lg font-semibold">{member.name}</h2>
         
         </div>
-        <p className="text-gray-500 text-sm">{member.age}</p>
-        <div className="text-gray-400 text-xs">Tracking Status</div>
+        <p className="text-gray-500 text-sm">Age :  {member.age}</p>
+        {/* <div className="text-gray-400 text-xs">Tracking Status</div> */}
         
+        {/* <div className="text-gray-400 text-xs">Tracking Status</div> */}
       </div>
       
      

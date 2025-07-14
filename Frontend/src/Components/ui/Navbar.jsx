@@ -5,6 +5,7 @@ import { useAuth } from "../../context/AuthContext";
 import axios from "axios";
 import { Menu, X, Bell } from "lucide-react";
 import { getDatabase, ref, onValue } from "firebase/database";
+import { Backendurl } from "../../../Private/backend";
 
 export default function Navbar() {
   const [location] = useLocation();
@@ -30,7 +31,7 @@ export default function Navbar() {
   const handleLogout = async () => {
     try {
       await logout();
-      await axios.get(`${import.meta.env.BACKEND_URL}/api/v1/users/logout`, {
+      await axios.get(`${Backendurl}/api/v1/users/logout`, {
         withCredentials: true,
       });
       // console.log("User logged out successfully");

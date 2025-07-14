@@ -1,1 +1,1 @@
-export const Backendurl = 'http://localhost:3001'
+export const Backendurl = import.meta.env.VITE_BACKEND_URL
